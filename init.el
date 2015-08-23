@@ -137,6 +137,9 @@
 (load "setup-clojure.el")
 (load "setup-js.el")
 
+
+(load "ace-jump-mode.el")
+
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 
