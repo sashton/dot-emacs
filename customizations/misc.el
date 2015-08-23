@@ -14,4 +14,5 @@
 
 (global-set-key (kbd "C-x g") 'magit-status)
 
-(global-set-key (kbd "M-p") 'ace-jump-mode)
+(global-set-key (kbd "M-p") 'ace-jump-char-mode)
+
