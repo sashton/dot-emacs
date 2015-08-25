@@ -71,6 +71,8 @@
 
     darcula-theme
 
+    expand-region
+
     ;; git integration
     magit))
 
@@ -143,3 +145,5 @@
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 
+(if (file-exists-p "~/.local.emacs.el")
+    (load "~/.local.emacs.el"))
