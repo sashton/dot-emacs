@@ -73,6 +73,8 @@
 
     expand-region
 
+    company
+
     ;; git integration
     magit))
 
