@@ -3,6 +3,7 @@
 ;; Key binding to use "hippie expand" for text autocompletion
 ;; http://www.emacswiki.org/emacs/HippieExpand
 (global-set-key (kbd "M-/") 'hippie-expand)
+(global-set-key (kbd "C-z") 'undo)
 
 ;; Lisp-friendly hippie expand
 (setq hippie-expand-try-functions-list
@@ -71,4 +72,12 @@
       (ns-get-selection-internal 'CLIPBOARD)
     (quit nil)))
 
-(setq electric-indent-mode nil)
+;; indent on newline
+(electric-indent-mode +1)
+
+;; enable copy to system clipboard
+(setq x-select-enable-clipboard t)
+
+(delete-selection-mode 1)
+
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)

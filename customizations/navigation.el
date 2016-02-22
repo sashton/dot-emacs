@@ -19,6 +19,7 @@
 (recentf-mode 1)
 (setq recentf-max-menu-items 40)
 
+(global-set-key (kbd "C-x C-r") 'recentf-open-files)
 
 ;; ido-mode allows you to more easily navigate choices. For example,
 ;; when you want to switch buffers, ido presents you with a list
@@ -49,6 +50,7 @@
 ;; Shows a list of buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+(global-set-key (kbd "C-x k") 'kill-this-buffer)
 
 ;; Enhances M-x to allow easier execution of commands. Provides
 ;; a filterable list of possible commands in the minibuffer
@@ -59,3 +61,14 @@
 
 ;; projectile everywhere!
 (projectile-global-mode)
+
+;; window navigation
+(global-set-key (kbd "C-x o") 'switch-window)
+
+;; toggle tree navigation
+(global-set-key [f8] 'neotree-toggle)
+(setq new-smart-open t)
+
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+   
+ (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling

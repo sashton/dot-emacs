@@ -9,8 +9,13 @@
 (add-hook 'scheme-mode-hook           #'enable-paredit-mode)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
-;; eldoc-mode shows documentation in the minibuffer when writing code
+;; eldoc-mode shows documentation in the minibuffer nwhen writing code
 ;; http://www.emacswiki.org/emacs/ElDoc
 (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
+
+
+
+(eval-after-load 'paredit-mode (define-key paredit-mode-map (kbd "M-[") 'paredit-wrap-square))
+(eval-after-load 'paredit-mode (define-key paredit-mode-map (kbd "M-{") 'paredit-wrap-curly))
