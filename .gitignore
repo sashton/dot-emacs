@@ -3,3 +3,11 @@
 
 # Packaging
 .cask
+*~
+.recentf
+ido.last
+places
+.smex-items
+*.swp
+*.eld
+cider-history
