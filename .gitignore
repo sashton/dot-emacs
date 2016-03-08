@@ -11,3 +11,5 @@ places
 *.swp
 *.eld
 cider-history
+elpa/
+.mc-lists.el
