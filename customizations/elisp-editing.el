@@ -16,6 +16,6 @@
 (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
 
 
-
-(eval-after-load 'paredit-mode (define-key paredit-mode-map (kbd "M-[") 'paredit-wrap-square))
-(eval-after-load 'paredit-mode (define-key paredit-mode-map (kbd "M-{") 'paredit-wrap-curly))
+(eval-after-load "paredit" '(progn 
+                              (define-key paredit-mode-map (kbd "M-[") 'paredit-wrap-square)
+                              (define-key paredit-mode-map (kbd "M-{") 'paredit-wrap-curly)))
