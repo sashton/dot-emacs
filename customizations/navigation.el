@@ -69,6 +69,6 @@
 (global-set-key [f8] 'neotree-toggle)
 (setq new-smart-open t)
 
-(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+(setq mouse-wheel-scroll-amount '(5 ((shift) . 1))) ;; one line at a time
    
  (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling

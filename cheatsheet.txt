@@ -1,0 +1,10 @@
+SPC q q   - quit spacemacs
+
+SPC f e d - edit dotfile
+SPC f e R - reload spacemacs config
+SPC f s   - save buffer
+SPC f S   - save all buffers
+
+SPC b d   - kill current buffer
+
+SPC
